@@ -185,6 +185,67 @@ class NostalgiaForInfinityNext(IStrategy):
     }
 
     #############################################################
+    # standard plotting
+    plot_config = {
+        'main_plot': {
+            'ma_buy': {'color': 'orange'},
+            'ma_sell': {'color': 'orange'},
+            'bb20_2_low': {'color': 'rgba(0,255,0,1)', 'fill_to': 'bb20_2_mid', 'fill_label': 'BB lower', 'fill_color': 'rgba(76,255,46,0.2)' },
+            'bb20_2_mid': {'color': 'rgba(0,128,128,1)', 'fill_to': 'bb20_2_upp', 'fill_label': 'BB upper', 'fill_color':  'rgba(255,76,46,0.2)' },
+            'bb20_2_upp': {'color': 'rgba(0,0,255,1.0)'}
+        },
+        'subplots': {
+            'RSI': {
+                'rsi': {'color': 'blue'}
+            },
+            'BUYS': {
+                'sell_pump_48_1_1h': {'color': 'green'},
+                'pm': {'color': 'red'},
+                'r_480': {'color': 'blue'},
+                'buy_condition_1': {'color': 'rgba(0,128,0,0.8)'},
+            },
+            'BuyConditions': {
+                'buy_condition_1': {'color': 'rgba(0,128,7,0.8)'},
+                'buy_condition_2': {'color': 'rgba(0,128,14,0.8)'},
+                'buy_condition_3': {'color': 'rgba(0,128,21,0.8)'},
+                'buy_condition_4': {'color': 'rgba(0,128,28,0.8)'},
+                'buy_condition_5': {'color': 'rgba(0,128,35,0.8)'},
+                'buy_condition_6': {'color': 'rgba(0,128,42,0.8)'},
+                'buy_condition_7': {'color': 'rgba(0,128,49,0.8)'},
+                'buy_condition_8': {'color': 'rgba(0,128,56,0.8)'},
+                'buy_condition_9': {'color': 'rgba(0,128,63,0.8)'},
+                'buy_condition_10': {'color': 'rgba(0,128,70,0.8)'},
+                'buy_condition_11': {'color': 'rgba(0,128,77,0.8)'},
+                'buy_condition_12': {'color': 'rgba(0,128,84,0.8)'},
+                'buy_condition_13': {'color': 'rgba(0,128,91,0.8)'},
+                'buy_condition_14': {'color': 'rgba(0,128,98,0.8)'},
+                'buy_condition_15': {'color': 'rgba(0,128,105,0.8)'},
+                'buy_condition_16': {'color': 'rgba(0,128,112,0.8)'},
+                'buy_condition_17': {'color': 'rgba(0,128,119,0.8)'},
+                'buy_condition_18': {'color': 'rgba(0,128,126,0.8)'},
+                'buy_condition_19': {'color': 'rgba(0,128,133,0.8)'},
+                'buy_condition_20': {'color': 'rgba(0,128,140,0.8)'},
+                'buy_condition_21': {'color': 'rgba(0,128,147,0.8)'},
+                'buy_condition_22': {'color': 'rgba(0,128,154,0.8)'},
+                'buy_condition_23': {'color': 'rgba(0,128,161,0.8)'},
+                'buy_condition_24': {'color': 'rgba(0,128,168,0.8)'},
+                'buy_condition_25': {'color': 'rgba(0,128,175,0.8)'},
+                'buy_condition_26': {'color': 'rgba(0,128,182,0.8)'},
+                'buy_condition_27': {'color': 'rgba(0,128,189,0.8)'},
+                'buy_condition_28': {'color': 'rgba(0,128,196,0.8)'},
+                'buy_condition_29': {'color': 'rgba(0,128,203,0.8)'},
+                'buy_condition_30': {'color': 'rgba(0,128,210,0.8)'},
+                'buy_condition_31': {'color': 'rgba(0,128,217,0.8)'},
+                'buy_condition_32': {'color': 'rgba(0,128,224,0.8)'},
+                'buy_condition_33': {'color': 'rgba(0,128,231,0.8)'},
+                'buy_condition_34': {'color': 'rgba(0,128,238,0.8)'},
+                'buy_condition_35': {'color': 'rgba(0,128,245,0.8)'}
+            }
+        }
+    }
+
+
+    #############################################################
 
     buy_protection_params = {
         1: {
